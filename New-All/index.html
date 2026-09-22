@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography & Backgrounds Demo</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Redirect after 5 seconds -->
+  <!-- <meta http-equiv="refresh" content="5;url=https://www.example.com"> -->
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- <div class="nav-brand">CSS Learning</div> -->
+    <ul class="nav-links">
+      <li><a href="#gradients">Gradients</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#fonts">Fonts</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#redirect">Redirect</a></li>
+      <li><a href="#positioning">Positioning</a></li>
+      <li><a href="#transform">Transform</a></li>
+      <li><a href="#transition">Transition</a></li>
+      <li><a href="#animation">Animation</a></li>
+      <li><a href="#tailwind">Tailwind CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#javascript-core">JavaScript Core</a></li>
+      <li><a href="#conditionals">Conditional Statements</a></li>
+      <li><a href="#switch-case">Switch Case</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#scopes">Scopes</a></li>
+      <li><a href="#hoisting">Hoisting</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <h1 class="hero-title">Typography & Backgrounds</h1>
+    <p class="subtitle">Exploring CSS Styling & Text Layouts</p>
+  </header>
+
+  <main class="container">
+    <!-- Gradient Showcase -->
+    <section id="gradients" class="card gradient-box">
+      <h2>Gradient Backgrounds</h2>
+      <p>Linear gradient blend using purple and violet hues with styled paragraph text.</p>
+    </section>
+
+    <!-- Custom Typography -->
+    <section id="typography" class="card text-demo">
+      <h2>Custom Text Formatting</h2>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem similique vitae at culpa unde excepturi tempore aspernatur magni obcaecati. Quis nam officia tenetur similique saepe nisi, sapiente quibusdam non debitis.
+      </p>
+      <p id="shadow">Text Shadow Effect</p>
+    </section>
+
+    <!-- Font Styles Example -->
+    <section id="fonts" class="card font-demo">
+      <h2>Font Styles Example</h2>
+      <p class="serif">Serif font example</p>
+      <p class="sans-serif">Sans-serif font example</p>
+      <p class="monospace">Monospace font example</p>
+      <p class="cursive">Cursive font example</p>
+      <p class="fantasy">Fantasy font example</p>
+      <p class="small">Small text (font-size: 12px)</p>
+      <p class="normal">Normal text (font-size: 16px)</p>
+      <p class="large">Large text (font-size: 24px)</p>
+      <p class="bold">Bold text (font-weight: bold)</p>
+      <p class="italic">Italic text (font-style: italic)</p>
+    </section>
+
+    <!-- Table Example -->
+    <section id="tables" class="card table-demo">
+      <h2>Table Example</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>28</td>
+            <td>Chicago</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Links Example -->
+    <section id="links" class="card links-demo">
+      <h2>Links Example</h2>
+      <p>
+        <a href="https://www.google.com" target="_blank">External Link (Google)</a>
+      </p>
+      <p>
+        <a href="#para">Internal Link (to paragraph)</a>
+      </p>
+      <p>
+        <a href="mailto:test@example.com">Email Link</a>
+      </p>
+      <p>
+        <a href="tel:+1234567890">Phone Link</a>
+      </p>
+      <p>
+        <a href="#top">Back to Top</a>
+      </p>
+    </section>
+
+    <!-- Redirect Example -->
+    <section id="redirect" class="card redirect-demo">
+      <h2>Redirect Example</h2>
+      <p>This page will redirect after 5 seconds...</p>
+      <p><a href="https://jega.netlify.app/">Click here to redirect now</a></p>
+    </section>
+
+    <!-- CSS Positioning Demo -->
+    <section id="positioning" class="card position-demo">
+      <h2>CSS Positioning Demo</h2>
+
+      <!-- Relative -->
+      <div class="position-box relative-box">
+        <h3>Relative</h3>
+          </div>
+
+      <!-- Absolute -->
+      <div class="position-container">
+        <div class="position-box absolute-box">
+          <h3>Absolute</h3>
+        </div>
+      </div>
+
+      <!-- Fixed -->
+      <div class="position-box fixed-box">
+        <h3>Fixed</h3>
+      </div>
+
+      <!-- Sticky -->
+      <div class="sticky-wrapper">
+        <div class="position-box sticky-box">
+          <h3>Sticky</h3>
+        </div>
+        <p class="scroll-text">Scroll down to see the sticky effect. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="scroll-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <p class="scroll-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+        <p class="scroll-text">Scroll more to see sticky behavior. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p class="scroll-text">Scroll more to see sticky behavior. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        <p class="scroll-text">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+      </div>
+    </section>
+
+    <!-- Transform Demo -->
+    <section id="transform" class="card transform-demo">
+      <h2>Transform Property</h2>
+      <p class="transform-label">translate() &middot; rotate() &middot; scale() &middot; skew()</p>
+      <div class="transform-grid">
+        <div class="transform-box translate-box">translate(100px, 50px)</div>
+        <div class="transform-box rotate-box">rotate(180deg)</div>
+        <div class="transform-box scale-box">scale(1.5)</div>
+        <div class="transform-box skew-box">skew(45deg)</div>
+      </div>
+    </section>
+
+    <!-- Transition Demo -->
+    <section id="transition" class="card transition-demo">
+      <h2>Transition Property</h2>
+      <div class="transition-box trans">Transition</div>
+      <div class="transition-box transiform">
+        <h1>Transition & Transform</h1>
+      </div>
+    </section>
+
+    <!-- Animation Demo -->
+    <section id="animation" class="card animation-demo">
+      <h2>Animation</h2>
+      <h2 class="anime">CSS</h2>
+    </section>
+
+    <!-- Tailwind CSS v4 Demo -->
+    <section id="tailwind" class="card tailwind-demo">
+      <h2>Tailwind CSS v4</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Typography</h3>
+      <div class="grid gap-2">
+        <p class="font-serif">Font Family - serif</p>
+        <p class="font-sans">Font Family - sans-serif</p>
+        <p class="font-mono">Font Family - mono</p>
+        <p class="font-['Share_Tech']">Font Family - Custom Font (Share Tech)</p>
+
+        <p class="text-sm">Font size - sm</p>
+        <p class="text-md">Font size - md</p>
+        <p class="text-base">Font size - base</p>
+        <p class="text-lg">Font size - lg</p>
+        <p class="text-xl">Font size - xl</p>
+        <p class="text-2xl">Font size - 2xl</p>
+        <p class="text-3xl">Font size - 3xl</p>
+        <p class="text-4xl">Font size - 4xl</p>
+        <p class="text-5xl">Font size - 5xl</p>
+        <p class="text-6xl">Font size - 6xl</p>
+        <p class="text-7xl">Font size - 7xl</p>
+        <p class="text-8xl">Font size - 8xl</p>
+        <p class="text-9xl">Font size - 9xl</p>
+        <!-- <p class="text-[150px]">Font size - Custom Value</p> -->
+
+        <p class="text-5xl text-rose-600">Text Color - rose-600</p>
+        <p class="text-5xl text-[#040295]">Text Color - Custom Color</p>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Box Model Property</h3>
+      <div class="bg-blue-500 p-10 border-green-500 border-t-5 rounded-full my-10">
+        <h1 class="text-white text-2xl ">Hello World!</h1>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque facilis odit doloribus quod, perferendis id nisi doloremque tempore animi earum excepturi ex expedita perspiciatis. Nesciunt reprehenderit perspiciatis in cum.</p>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Backgrounds</h3>
+      <div class="h-96 bg-[url('https://images.pexels.com/photos/33603099/pexels-photo-33603099.jpeg?_gl=1*t6id3r*_ga*MTM3MjAzMDU0NS4xNzc3MzU1NjI3*_ga_8JE65Q40S6*czE3ODg3NTcyMTgkbzIwJGcxJHQxNzg4NzU3MjIxJGo1NyRsMCRoMA..')] bg-cover bg-no-repeat bg-center rounded-lg">
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">FlexBox</h3>
+      <div class="h-96 p-5 bg-blue-100 text-blue-900 flex flex-row items-center justify-evenly">
+        <p class="w-[200px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, fugiat. Ratione natus eos atque aperiam mollitia sunt, voluptatum corrupti, sequi iure magni delectus velit alias culpa ut. Sapiente, repellendus ad?</p>
+        <p class="w-[200px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, fugiat. Ratione natus eos atque aperiam mollitia sunt, voluptatum corrupti, sequi iure magni delectus velit alias culpa ut. Sapiente, repellendus ad?</p>
+        <p class="w-[200px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, fugiat. Ratione natus eos atque aperiam mollitia sunt, voluptatum corrupti, sequi iure magni delectus velit alias culpa ut. Sapiente, repellendus ad?</p>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Responsive</h3>
+      <div class="h-48 p-5 bg-green-400 sm:bg-blue-500 md:bg-rose-500 lg:bg-red-500 xl:bg-amber-600 2xl:bg-violet-600">
+        <h1 class="text-white text-2xl">Responsive</h1>
+      </div>
+    </section>
+
+    <!-- JavaScript ES6+ Introduction -->
+    <section id="javascript" class="card javascript-demo">
+      <h2>JavaScript ES6+ Introduction</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Script Types</h3>
+      <ol class="list-decimal list-inside mb-4 space-y-2">
+        <li>Inline Script</li>
+        <li>Internal Script</li>
+        <li>External Script</li>
+      </ol>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Inline Script</h3>
+      <button onclick="alert('Hello There!')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6">
+        Click Me!
+      </button>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Internal Script</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>console.log('Welcome to JavaScript Class');</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">External Script</h3>
+      <p class="mb-2">The external script is loaded from <code class="bg-gray-200 px-2 py-1 rounded">index.js</code>.</p>
+      <p id="external-script-output" class="font-mono text-lg"></p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Variables: var, let, const</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
+        <code>var firstName = 'Imran';
+              let lastName = 'Khan';
+              const fullName = firstName + lastName;
+
+              let message1 = 'Hello';
+              let message2 = 'Hi';
+
+console.log(fullName);</code></pre>
+    </section>
+
+    <!-- JavaScript Core Concepts -->
+    <section id="javascript-core" class="card javascript-core-demo">
+      <h2>JavaScript Core Concepts</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">1. Variables: var, let, const</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>var firstName = 'Imran';
+      let lastName = 'Khan';
+      const fullName = firstName + lastName;
+
+      let message1 = 'Hello';
+      let message2 = 'Hi';
+
+      console.log(fullName);</code></pre>
+
+      <h4 class="text-xl font-semibold mt-4 mb-2">var keyword issue: Redeclaration</h4>
+      <pre class="bg-gray-800 text-yellow-400 p-4 rounded-lg overflow-x-auto mb-4"><code>var message = 'Hello There!';
+      var message = 'Good Morning!';
+      console.log(message);</code></pre>
+
+      <h4 class="text-xl font-semibold mt-4 mb-2">var vs let vs const</h4>
+      <p class="mb-2 font-semibold">1. Declaration</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>var firstName;
+      console.log(firstName);
+
+      let lastName;
+      console.log(lastName);
+
+      const fullName;
+      console.log(fullName);</code></pre>
+
+      <p class="mb-2 font-semibold">2. Re-Assign Value</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>var firstName = 'JS';
+      firstName = 'JavaScript';
+      console.log(firstName);
+
+      let lastName = 'ES6';
+      lastName = 'EcmaScript6+';
+      console.log(lastName);
+
+      const fullName = 'JavaScript';
+      fullName = 'JS ES6+';
+      console.log(fullName);</code></pre>
+
+      <p class="mb-2 font-semibold">3. Re-Declaration</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6">
+      <code>var firstName = 'Java';
+      var firstName = 'JS';
+      console.log(firstName);
+
+      let lastName = 'Script';
+      let lastName = 'JavaScript';
+      console.log(lastName);
+
+      const fullName = 'JavaScript';
+      const fullName = 'JavaScript ES6+';
+      console.log(fullName);</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">2. Data Types</h3>
+
+      <h4 class="text-xl font-semibold mt-4 mb-2">Primitive Data Types</h4>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4">
+      <code>// 1. String
+      let str = 'Hello There!';
+
+      // 2. Number
+      let height = 6.5;
+      let weight = 60;
+
+      // 3. Boolean
+      let isStudent = true;
+      let isWorking = false;
+
+      // 4. Undefined
+      let isPlaced;
+      console.log(isPlaced);
+
+      // 5. Null
+      let phone_No = null;</code></pre>
+
+      <h4 class="text-xl font-semibold mt-4 mb-2">Non-Primitive Data Types</h4>
+      <p class="mb-2 font-semibold">1. Object (CRUD Operations)</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let student = {
+      name:'Imran Khan',
+      phone:7418994157,
+      email:'jmcimrankhan@gmail.com',
+      address:{
+          doorNo:54,
+          street:'north street',
+          area:'velachery',
+          city:'chennai'
+      }
+  }
+
+        // Create Operation
+        student.nationality = 'Indian';
+        student.language = 'Tamil';
+        student.address.state = 'TamilNadu';
+
+        // Read Operation
+        console.log(student);
+        console.log(student.email);
+        console.log(student.address.area);
+        console.log(student['phone']);
+
+        // Update Operation
+        student.address.doorNo = 100;
+        student.address.street = 'velachery main road';
+
+        // Delete Operation
+        delete student.address.doorNo;
+        delete student.language;</code></pre>
+
+      <p class="mb-2 font-semibold">2. Array</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>let colors = ['red','green','blue','orange','yellow'];
+
+      colors[5] = 'lime';
+      colors[2] = 'darkblue';
+
+      console.log(colors);</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">3. Operators</h3>
+      <p class="mb-2 font-semibold">Arithmetic Operators (+, -, *, /, %, **, ++, --)</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let a = 10;
+      let b = 2;
+      console.log('ADD : ', a + b);
+      console.log('SUB : ', a - b);
+      console.log('MUL : ', a * b);
+      console.log('DIV : ', a / b);
+      console.log('REMAINDER : ', a % b);
+      console.log('EXPONENTIAL : ', a ** b);
+
+      // increment
+      console.log(++a);
+      console.log(a);
+
+      // decrement
+      console.log(--b);
+      console.log(b);
+
+      let number = 237;
+      number++;
+      console.log(number++ + ++number);
+
+      let num = 174;
+      --num;
+      num++;
+      console.log(++num - ++num);</code></pre>
+
+      <p class="mb-2 font-semibold">2. Assignment Operator (=)</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let message = 'Good Morning!';
+let message2 = message;
+console.log(message);
+console.log(message2);</code></pre>
+
+      <p class="mb-2 font-semibold">3. Logical Operator (&& - AND, || - OR, ! - NOT)</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>console.log(true && false);
+console.log(true || false);
+console.log(!true);
+
+let age = 10;
+let result = (age < 25) && (age >= 18);
+console.log(result);</code></pre>
+
+      <p class="mb-2 font-semibold">4. Conditional / Ternary Operator (? :)</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let number = 250;
+let response = (number <= 150) ? 'Condition is True' : 'Condition is False';
+console.log(response);</code></pre>
+
+      <p class="mb-2 font-semibold">5. typeof Operator</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>let data = 'hello';
+console.log(typeof data);
+
+console.log(typeof '');
+console.log(typeof 100);
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+
+console.log(typeof {});
+console.log(typeof []);</code></pre>
+    </section>
+
+    <!-- Conditional Statements -->
+    <section id="conditionals" class="card conditionals-demo">
+      <h2>Conditional Statements</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">If / Else If / Else</h3>
+      <p class="mb-2">Ticket pricing example based on age:</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>function checkTicket(age) {
+      if (age <= 7) {
+        return 'Free Ticket';
+      } else if ((age > 7) && (age <= 50)) {
+        return 'Adults Ticket - Ticket Price is 250rs';
+      } else if (age > 50) {
+        return 'Seniors Ticket - Ticket Price is 150rs';
+      } else {
+        return 'Wrong Input';
+      }
+    }
+
+      // Demo values
+      console.log('Age 5:', checkTicket(5));
+      console.log('Age 25:', checkTicket(25));
+      console.log('Age 60:', checkTicket(60));</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Live Demo</h3>
+      <p class="mb-2">Enter an age to check ticket type:</p>
+      <input type="number" id="ageInput" placeholder="Enter age" class="border border-gray-300 rounded px-3 py-2 mr-2 w-40">
+      <button onclick="checkTicketDemo()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mb-6">Check Ticket</button>
+      <p id="ticketResult" class="font-mono text-lg font-semibold"></p>
+    </section>
+
+    <!-- Switch Case -->
+    <section id="switch-case" class="card switch-case-demo">
+      <h2>Switch Case</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Syntax</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>switch(expression) {
+  case value1:
+    // code block
+    break;
+  case value2:
+    // code block
+    break;
+  default:
+    // default code block
+}</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Example: Student Grade</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>function getStudentGrade(rank) {
+  switch(rank) {
+    case 'A':
+      return 'Good Student';
+    case 'B':
+      return 'Average Student';
+    case 'C':
+      return 'Poor Student';
+    default:
+      return 'Legend';
+  }
+}
+
+// Demo values
+console.log('Rank A:', getStudentGrade('A'));
+console.log('Rank B:', getStudentGrade('B'));
+console.log('Rank C:', getStudentGrade('C'));
+console.log('Rank X:', getStudentGrade('X'));</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Live Demo</h3>
+      <p class="mb-2">Enter a rank (A, B, or C):</p>
+      <input type="text" id="rankInput" placeholder="Enter rank (A/B/C)" maxlength="1" class="border border-gray-300 rounded px-3 py-2 mr-2 w-40 uppercase">
+      <button onclick="checkGradeDemo()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">Check Grade</button>
+      <p id="gradeResult" class="font-mono text-lg font-semibold"></p>
+    </section>
+
+    <!-- Loops -->
+    <section id="loops" class="card loops-demo">
+      <h2>Loops</h2>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">For Loop</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>// Basic for loop
+for(let i = 1; i <= 10; i++){
+  console.log(i);
+}
+
+// Loop through array
+let colors = ['red','green','blue','yellow','orange','black','white'];
+
+for(let i = 0; i < colors.length; i++){
+  console.log(i + 1, colors[i]);
+}</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Nested Loop</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>for(let i = 1; i <= 5; i++){
+  console.log(i, 'Outer Loop');
+
+  for(let j = 1; j <= 3; j++ ){
+    console.log(j, 'Inner Loop');
+  }
+}
+
+// Break and Continue
+for(let j = 1; j <= 6; j++ ){
+  if(j == 4){
+    break; // or continue;
+  }
+  console.log(j);
+}</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">While Loop</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let i = 0;
+while(i < 5){
+  console.log(i);
+  i++;
+}</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Do While Loop</h3>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>let j = 0;
+do{
+  console.log(j);
+  j++;
+}while(j < 10);</code></pre>
+    </section>
+
+    <!-- Scopes in JS -->
+    <section id="scopes" class="card scopes-demo">
+      <h2>Scopes in JavaScript</h2>
+      <p class="mb-2">Scope defines the context in which variables are accessible. It determines the lifetime and visibility of variables.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Global Scope</h3>
+      <p class="mb-2">Variables declared outside any function or block are accessible anywhere in the code.</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let data = 'Hi';
+
+// Accessible inside block
+{
+  console.log(data);
+}
+
+// Accessible outside block
+console.log(data);</code></pre>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Block Scope</h3>
+      <p class="mb-2">Introduced with let and const in ES6, variables declared inside {} are accessible only within that block.</p>
+      <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>// This will throw an error
+{
+  let message = 'Good Morning!';
+}
+
+console.log(message); // Error: message is not defined</code></pre>
+    </section>
+
+    <!-- Hoisting -->
+    <section id="hoisting" class="card hoisting-demo">
+      <h2>Hoisting</h2>
+      <p class="mb-2">Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope.</p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2">Example</h3>
+      <pre class="bg-gray-800 text-yellow-400 p-4 rounded-lg overflow-x-auto mb-4"><code>console.log(text); // undefined (not an error)
+
+let text = 'Hello Guys';</code></pre>
+
+      <p class="mb-2 font-semibold">Note: The variable is hoisted but the value is not. It returns <code class="bg-gray-200 px-2 py-1 rounded">undefined</code> until the assignment is reached.</p>
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
