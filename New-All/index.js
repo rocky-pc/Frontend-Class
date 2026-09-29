@@ -310,9 +310,176 @@ console.log('Outside block:', data);
 
 // ===========================================
 // Hoisting
-// ===========================================
 
 // Variable hoisting example
-console.log('Hoisting example - text before declaration:', text); // undefined
+// console.log('Hoisting example - text before declaration:', text); // undefined
 let text = 'Hello Guys';
 console.log('Hoisting example - text after declaration:', text);
+
+// ===========================================
+// console.log("Sample");
+// let dataz = 'GM';
+// {
+//   // console.log(dataz);
+//   let dataz = 'HG';
+//   console.log(dataz);
+// }
+// console.log(dataz);
+
+let names = "Jegathesh S   "
+
+console.log(names.length -1 );
+
+console.log(names.trim().toLowerCase());
+console.log(names.trim().toUpperCase());
+
+console.log(names.at(9));
+
+console.log(names.indexOf('e'));
+
+console.log(names.concat(' NEW'))
+console.log(names);
+
+console.log(names.trim());
+console.log(names.includes("esh"));
+console.log(names.replace("esh","aaa"));
+console.log(names.split(/(a)/));
+
+console.log(names.padStart(18,"$$$").padEnd(25,"%%"))
+console.log(names.padEnd(18,"$$$"))
+
+let namez = "     *** Imbran ***    "
+
+console.log(namez.trim())
+console.log(namez)
+
+// --------------------------------------------------- 
+
+let pet = "Dragon";
+let energy = 7;
+
+if (energy > 3) {
+  console.log(pet + " breathes fire! 🔥");
+} else {
+  console.log(pet + " is taking a nap. 😴");
+}
+
+let textz = "banana";
+let neww = textz.replace('banana','Apple')
+let output = neww
+console.log(output.includes('Apple'));
+
+
+// -----------------------------------------------
+// ARRAY //
+
+let colorsz = ['red', 'green', 'blue', 'orange', 'yellow'];
+// colorsz[5] = 'lime';
+// colorsz[2] = 'darkblue';
+console.log('Colors Array:', colorsz);
+
+console.log(colorsz.slice(2,5));
+
+// ------------------------------------
+
+const stack = ["B", "C"];
+
+stack.push("D");      // ["B", "C", "D"]
+console.log(stack);
+
+stack.unshift("A");   // ["A", "B", "C", "D"]
+console.log(stack);
+
+stack.pop();          // removes "D" -> ["A", "B", "C"]
+console.log(stack);
+
+stack.shift();        // removes "A" -> ["B", "C"]
+console.log(stack);
+
+
+// -------------------------------------------
+
+// Hoisting 
+
+// hoisting is the behavior where declarations of variables, functions, and 
+// classes are moved to the top of their scope during the compilation phase,
+// before code execution begins. This means you can reference certain 
+// identifiers before their actual declaration line, though the behavior 
+// differs depending on how they are declared
+
+// console.log(text);
+
+// let text = 'Hello Guys';
+
+
+
+let messagez = 'Good Morning!';
+
+{
+    // console.log(message);
+    let messagez = 'Hello Guys!';
+    console.log(messagez);
+}
+console.log(messagez);
+
+
+// -------------------------------------------
+
+
+// Function 
+
+// 1.function declaration 
+// 2.function invoke / call
+// 3.arguments 
+// 4.parameters 
+// 5.return value 
+// 6.default parameter 
+// 7.arrow function 
+// 8.anonymous function 
+
+
+function add(num1,num2){
+    // console.log(num1,num2);
+    
+    let a = num1;
+    let b = num2;
+    let result = a + b;
+    console.log(result);
+}
+
+add(25,35);
+add(100,350);
+add(22,66);
+add(98,142);
+add(658,475);
+
+
+
+function printName(name){
+    let result = name;
+    return result;
+}
+let firstNamez = printName('Imran');
+// console.log(firstName);
+
+let lastNamez = printName(' Khan');
+// console.log(lastName);
+
+
+console.log(firstNamez + lastNamez);
+
+// ---------------------------------------------------
+function params(a=5,b=6){
+  console.log(a+b); 
+}
+
+params(8);
+
+sample();
+const sample = () => {
+  console.log("hello");
+}
+
+// ---------------------------------------------------
+
+// Document object model 

@@ -601,24 +601,23 @@ do{
       <p class="mb-2">Variables declared outside any function or block are accessible anywhere in the code.</p>
       <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-4"><code>let data = 'Hi';
 
-// Accessible inside block
-{
-  console.log(data);
-}
+      // Accessible inside block
+      {
+        console.log(data);
+      }
 
-// Accessible outside block
-console.log(data);</code></pre>
+      // Accessible outside block
+      console.log(data);</code></pre>
 
       <h3 class="text-2xl font-semibold mt-6 mb-2">Block Scope</h3>
       <p class="mb-2">Introduced with let and const in ES6, variables declared inside {} are accessible only within that block.</p>
       <pre class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto mb-6"><code>// This will throw an error
-{
-  let message = 'Good Morning!';
-}
+      {
+        let message = 'Good Morning!';
+      }
 
-console.log(message); // Error: message is not defined</code></pre>
+      console.log(message); // Error: message is not defined</code></pre>
     </section>
-
     <!-- Hoisting -->
     <section id="hoisting" class="card hoisting-demo">
       <h2>Hoisting</h2>
