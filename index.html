@@ -8,6 +8,31 @@
 <style>
 :root{--bg:#0b0d13;--panel:#121620;--panel2:#171c28;--line:#272d3b;--text:#f4f6fb;--muted:#98a1b5;--lime:#c5f36b;--cyan:#7de4d4;--pink:#f4a6c1;--radius:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1b2440 0,transparent 38%),var(--bg);color:var(--text);font:15px Manrope,system-ui,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.shell{display:grid;grid-template-columns:252px minmax(0,1fr);min-height:100vh}.sidebar{border-right:1px solid var(--line);padding:24px 16px;position:sticky;top:0;height:100vh;background:#0c0f16eF;backdrop-filter:blur(18px);display:flex;flex-direction:column;gap:24px}.brand{display:flex;align-items:center;gap:11px;padding:0 8px}.logo{width:38px;height:38px;border-radius:13px;background:var(--lime);color:#10130d;display:grid;place-items:center;font-weight:900;font-size:18px}.brand strong{font-size:15px;letter-spacing:-.5px}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.nav-label{font-size:10px;color:#657087;letter-spacing:1.6px;font-weight:800;padding:0 12px;margin-bottom:8px}.nav{display:grid;gap:5px}.nav button{border:0;color:#aeb6c8;background:transparent;text-align:left;padding:11px 12px;border-radius:11px;display:flex;gap:12px;align-items:center;font-weight:700;font-size:12px;transition:.2s}.nav button:hover,.nav button.active{background:#202735;color:var(--lime)}.nav .ico{width:20px;text-align:center;font-size:16px}.side-bottom{margin-top:auto;border:1px solid var(--line);background:linear-gradient(145deg,#171e2b,#11151e);padding:15px;border-radius:15px}.side-bottom p{font-size:11px;color:var(--muted);line-height:1.6}.side-bottom strong{font-size:12px}.side-bottom button{background:var(--lime);border:0;border-radius:9px;padding:9px 12px;font-weight:800;font-size:11px;width:100%;color:#10130d}.main{min-width:0;padding:30px clamp(18px,4vw,54px) 70px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:34px}.crumb{color:var(--muted);font-size:12px}.crumb b{color:var(--text)}.top-actions{display:flex;gap:8px;align-items:center}.pill{border:1px solid var(--line);background:#151a25;border-radius:999px;padding:9px 12px;font-size:11px;color:#c8cfdd;font-weight:700}.status{color:var(--lime)}.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);gap:20px;margin-bottom:24px}.hero-main{border:1px solid #303747;border-radius:24px;padding:clamp(24px,4vw,42px);background:linear-gradient(125deg,#1b2230,#151923 62%,#222c25);position:relative;overflow:hidden;min-height:290px}.hero-main:after{content:"PY";position:absolute;right:-18px;bottom:-70px;font:900 220px Manrope;color:#ffffff08;letter-spacing:-20px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--lime);font-size:10px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 14px #c5f36b}.hero h1{font-size:clamp(34px,4.3vw,58px);line-height:1.04;letter-spacing:-2.8px;max-width:630px;margin:18px 0 15px}.hero h1 span{color:var(--lime)}.hero p{max-width:540px;color:#aeb7c8;line-height:1.8;font-size:13px}.hero-cta{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.primary,.secondary{border-radius:10px;padding:12px 16px;font-size:12px;font-weight:800;border:1px solid transparent}.primary{background:var(--lime);color:#12160d}.secondary{background:#ffffff08;border-color:#384050;color:#e6eaf2}.hero-side{display:flex;flex-direction:column;gap:14px}.mini-card{border:1px solid var(--line);background:linear-gradient(145deg,#161c28,#11151e);border-radius:20px;padding:21px;flex:1}.mini-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px}.mini-top span:last-child{color:var(--lime)}.big-number{font-size:38px;font-weight:800;letter-spacing:-2px;margin:14px 0 4px}.mini-card p{font-size:11px;color:var(--muted);line-height:1.6;margin:0}.progress{height:6px;background:#2a3040;border-radius:9px;margin-top:15px;overflow:hidden}.progress span{display:block;height:100%;width:18%;background:var(--lime);border-radius:9px;transition:.3s}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:32px 0 16px}.section-head h2{font-size:21px;letter-spacing:-.8px;margin:0}.section-head p{color:var(--muted);font-size:12px;margin:7px 0 0}.text-link{border:0;background:transparent;color:var(--lime);font-weight:800;font-size:11px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.stat{border:1px solid var(--line);border-radius:15px;padding:17px;background:#11151e}.stat small{color:var(--muted);font-size:10px;font-weight:700}.stat strong{display:block;font-size:25px;margin:9px 0 3px;letter-spacing:-1px}.stat span{font-size:10px;color:#7c879b}.content-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:15px}.panel{border:1px solid var(--line);border-radius:18px;background:#11151e;padding:20px;min-width:0}.panel h3{margin:0 0 6px;font-size:14px}.muted{color:var(--muted)}.topic-list{display:grid;gap:9px;margin-top:16px}.topic{border:1px solid #272e3b;border-radius:13px;overflow:hidden;background:#141923}.topic summary{list-style:none;cursor:pointer;padding:14px;display:flex;gap:12px;align-items:center}.topic summary::-webkit-details-marker{display:none}.topic summary .num{width:32px;height:32px;display:grid;place-items:center;background:#252d3b;border-radius:10px;color:var(--lime);font:12px "DM Mono",monospace}.topic summary strong{font-size:12px}.topic summary small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.chev{margin-left:auto;color:var(--muted)}.topic-body{padding:0 16px 17px 58px;color:#b7c0d0;font-size:12px;line-height:1.8}.topic-body code,.inline-code{font-family:"DM Mono",monospace;color:var(--cyan);background:#202936;padding:2px 5px;border-radius:5px}.example{background:#0b0f16;border:1px solid #293141;border-radius:10px;padding:12px;margin:10px 0;color:#cfe6e2;font:11px/1.8 "DM Mono",monospace;white-space:pre-wrap;overflow:auto}.tag-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.tag{border:1px solid #303747;border-radius:7px;padding:5px 8px;color:#aeb8c9;font-size:9px}.quick-links{display:grid;gap:9px;margin-top:15px}.quick{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid #292f3d;border-radius:12px;background:#151a24;text-align:left;color:var(--text)}.quick:hover{border-color:#65774d}.quick .qicon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#293326;font-size:16px}.quick strong{display:block;font-size:11px}.quick small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.quick em{margin-left:auto;font-style:normal;color:var(--lime)}.view{display:none}.view.active{display:block;animation:rise .28s ease}@keyframes rise{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}.page-title{font-size:32px;letter-spacing:-1.5px;margin:4px 0 8px}.page-intro{color:var(--muted);font-size:13px;line-height:1.7;max-width:760px;margin:0 0 24px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:17px}.search{flex:1;min-width:180px;background:#121722;border:1px solid #303747;color:var(--text);border-radius:10px;padding:11px 13px;outline:none}.search:focus,textarea:focus{border-color:var(--lime)}.filter{background:#121722;border:1px solid #303747;color:#cbd2df;border-radius:10px;padding:10px 12px;font-size:11px}.lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lesson-card{border:1px solid var(--line);background:#11151e;border-radius:15px;padding:18px}.lesson-card .label{font-size:9px;text-transform:uppercase;letter-spacing:1.2px;color:var(--lime);font-weight:800}.lesson-card h3{font-size:15px;margin:10px 0 8px}.lesson-card p{color:#a8b1c2;font-size:12px;line-height:1.8}.lesson-card details{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}.lesson-card summary{cursor:pointer;color:var(--cyan);font-size:11px;font-weight:800}.lesson-card pre{white-space:pre-wrap;overflow:auto;background:#090d13;border-radius:10px;padding:12px;color:#d6e6de;font:11px/1.8 "DM Mono",monospace}.assignment-list{display:grid;gap:10px}.assignment{border:1px solid var(--line);background:#11151e;border-radius:14px;overflow:hidden}.assignment summary{display:flex;gap:12px;align-items:center;padding:15px;cursor:pointer;list-style:none}.assignment summary::-webkit-details-marker{display:none}.assignment .qnumber{background:#252b39;color:var(--lime);font:11px "DM Mono",monospace;border-radius:8px;padding:9px}.assignment strong{font-size:12px;line-height:1.5}.assignment small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.assignment .right{margin-left:auto;color:var(--muted)}.assignment-body{border-top:1px solid var(--line);padding:16px}.assignment-body p{color:#b5bdcc;font-size:12px;line-height:1.7}.assignment-body pre{white-space:pre-wrap;background:#090d13;padding:14px;border-radius:10px;color:#d7e9e4;font:11px/1.8 "DM Mono",monospace;overflow:auto}.assignment-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid #394153;background:#1a202c;color:#e5e9f1;border-radius:8px;padding:8px 10px;font-size:10px;font-weight:800}.small-btn.good{background:var(--lime);color:#10140b;border-color:var(--lime)}.terminal{border:1px solid #343d4f;border-radius:16px;overflow:hidden;background:#090c12}.terminal-head{display:flex;align-items:center;gap:7px;padding:12px 15px;background:#171d29;border-bottom:1px solid #303746}.traffic{width:8px;height:8px;border-radius:50%;background:#f4a6c1}.traffic:nth-child(2){background:#f5ce72}.traffic:nth-child(3){background:#c5f36b}.terminal-head strong{margin-left:8px;font-size:11px}.terminal-head span:last-child{margin-left:auto;font-size:10px;color:var(--muted)}.terminal-body{padding:15px}.terminal-body textarea{display:block;width:100%;min-height:230px;resize:vertical;background:#0c1018;border:1px solid #293141;border-radius:10px;padding:15px;color:#d9e7e2;outline:none;font:12px/1.8 "DM Mono",monospace}.terminal-controls{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:10px}.terminal-controls .hint{color:var(--muted);font-size:10px}.output-wrap{margin-top:14px;border:1px solid #293141;border-radius:11px;overflow:hidden}.output-head{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#161c27;color:var(--muted);font-size:10px}.output{padding:15px;min-height:90px;white-space:pre-wrap;overflow:auto;color:#d7f7bd;font:12px/1.8 "DM Mono",monospace;background:#0a0e14}.output.error{color:#ffb5c8}.run-status{font-size:10px;color:var(--lime)}.notice{font-size:11px;color:#aab4c5;line-height:1.8;border:1px solid #303747;border-radius:11px;padding:12px;margin:12px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.empty{padding:40px 20px;text-align:center;color:var(--muted);border:1px dashed #343b4b;border-radius:14px}.footer{margin-top:45px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;color:#68748a;font-size:10px}.mobile-menu{display:none}
 @media(max-width:1000px){.shell{grid-template-columns:210px minmax(0,1fr)}.hero{grid-template-columns:1fr}.hero-side{display:grid;grid-template-columns:1fr 1fr}.content-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.shell{display:block}.sidebar{position:fixed;z-index:30;left:-270px;top:0;width:250px;transition:left .25s;box-shadow:15px 0 45px #0008}.sidebar.open{left:0}.main{padding:20px 15px 45px}.mobile-menu{display:inline-flex}.topbar{margin-bottom:22px}.hero h1{letter-spacing:-1.8px}.hero-side{grid-template-columns:1fr 1fr}.mini-card{padding:15px}.big-number{font-size:30px}.lesson-grid,.split{grid-template-columns:1fr}.section-head{align-items:start}.page-title{font-size:27px}.footer{flex-direction:column}.hero-main{padding:24px;min-height:310px}}@media print{.sidebar,.topbar,.hero-cta,.toolbar,.assignment-actions,.terminal-controls,.footer{display:none!important}.shell{display:block}.main{padding:0}.view{display:none!important}.view.active{display:block!important}.assignment{break-inside:avoid}}
+
+/* Smooth floating motion + accessible reduced-motion support */
+@keyframes floatSoft{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-9px,0)}}
+@keyframes glowDrift{0%,100%{opacity:.25;transform:translate3d(0,0,0) scale(1)}50%{opacity:.55;transform:translate3d(12px,-8px,0) scale(1.06)}}
+@keyframes floatIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-main:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:4%;top:-28%;background:radial-gradient(circle,#c5f36b20,transparent 68%);pointer-events:none;animation:glowDrift 9s ease-in-out infinite}
+.hero-side .mini-card:first-child{animation:floatSoft 7s ease-in-out infinite}
+.hero-side .mini-card:last-child{animation:floatSoft 8s ease-in-out infinite;animation-delay:-2.5s}
+.stat,.lesson-card,.panel,.topic,.assignment{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.stat:hover,.lesson-card:hover,.panel:hover{transform:translateY(-4px);border-color:#495642;box-shadow:0 16px 38px #0002}
+.topic summary:hover,.assignment summary:hover{background:#ffffff04}
+.react-hero{position:relative;overflow:hidden;border:1px solid #303747;border-radius:22px;padding:clamp(22px,4vw,36px);background:linear-gradient(125deg,#17232d,#151923 65%,#222b27);margin-bottom:18px}
+.react-hero:after{content:"</>";position:absolute;right:12px;bottom:-35px;font:900 clamp(100px,15vw,190px) "DM Mono",monospace;color:#ffffff07;pointer-events:none}
+.concept-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.concept-card{position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#151b27,#10141d);border-radius:16px;padding:18px;animation:floatIn .55s ease both}
+.concept-card:nth-child(3n+2){animation-delay:.08s}.concept-card:nth-child(3n){animation-delay:.16s}
+.concept-card .concept-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#273326;color:var(--lime);font-size:18px;margin-bottom:13px}
+.concept-card h3{font-size:13px;margin:0 0 8px}.concept-card p{font-size:11px;color:#aab4c5;line-height:1.8;margin:0}
+.react-code{white-space:pre-wrap;overflow:auto;background:#090d13;border:1px solid #293141;border-radius:12px;padding:16px;color:#d7e9e4;font:11px/1.85 "DM Mono",monospace}
+.concept-badge{display:inline-block;border:1px solid #374333;color:var(--lime);border-radius:999px;padding:5px 8px;font-size:9px;font-weight:800;letter-spacing:.5px;margin-bottom:9px}
+.react-callout{border:1px solid #334337;background:#c5f36b0a;padding:13px 15px;border-radius:12px;color:#c7d2c5;font-size:11px;line-height:1.8;margin:14px 0}
+@media(max-width:900px){.concept-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.concept-grid{grid-template-columns:1fr}.react-hero:after{right:-5px;bottom:-18px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
 </style>
 </head>
 <body>
@@ -17,6 +42,7 @@
   <div><div class="nav-label">WORKSPACE</div><nav class="nav" id="nav">
     <button class="active" data-view="home"><span class="ico">◈</span>Overview</button>
     <button data-view="lessons"><span class="ico">▤</span>Lessons & notes</button>
+    <button data-view="react"><span class="ico">⚛</span>React & modern frontend</button>
     <button data-view="assignments"><span class="ico">☷</span>Assignments <span id="navCount" style="margin-left:auto;color:var(--lime)">100+</span></button>
     <button data-view="loops"><span class="ico">↻</span>60 for-loop questions</button>
     <button data-view="terminal"><span class="ico">⌘</span>Python terminal</button>
@@ -37,6 +63,123 @@
   <div class="content-grid"><div><div class="section-head"><div><h2>Continue learning</h2><p>Short explanations with examples you can run.</p></div><button class="text-link" onclick="switchView('lessons')">All lessons ↗</button></div><div class="topic-list" id="homeTopics"></div></div><div><div class="section-head"><div><h2>Jump right in</h2><p>Pick your next task.</p></div></div><div class="panel"><h3>Practice shortcuts</h3><div class="quick-links"><button class="quick" onclick="openAssignmentGroup('For loop')"><span class="qicon">↻</span><span><strong>For-loop assignments</strong><small>60 practice problems</small></span><em>↗</em></button><button class="quick" onclick="openAssignmentGroup('Indexing')"><span class="qicon">⌗</span><span><strong>Indexing & slicing</strong><small>6 assignment sets</small></span><em>↗</em></button><button class="quick" onclick="switchView('terminal')"><span class="qicon">⌘</span><span><strong>Run Python code</strong><small>Get output instantly</small></span><em>↗</em></button><button class="quick" onclick="switchView('assignments')"><span class="qicon">☷</span><span><strong>All assignments</strong><small>Question bank by title</small></span><em>↗</em></button></div></div></div></div>
 </section>
 <section class="view" id="view-lessons"><h1 class="page-title">Lessons & notes<span style="color:var(--lime)">.</span></h1><p class="page-intro">Simple topic summaries, key rules, and runnable examples. Open each lesson when you need a quick revision before attempting an assignment.</p><div class="toolbar"><input class="search" id="lessonSearch" placeholder="Search lessons, methods, examples…"><select class="filter" id="lessonFilter"><option value="all">All topics</option><option value="Basics">Basics</option><option value="Control flow">Control flow</option><option value="Collections">Collections</option><option value="Strings">Strings</option></select></div><div class="lesson-grid" id="lessonGrid"></div></section>
+<section class="view" id="view-react">
+  <div class="react-hero"><div class="eyebrow"><span class="dot"></span> MODERN FRONTEND TRACK</div><h1 class="page-title" style="font-size:clamp(30px,4vw,44px);margin-top:15px">React that feels <span style="color:var(--lime)">real.</span></h1><p class="page-intro" style="margin-bottom:0">Learn component thinking, hooks, API requests, forms, async states, performance and production-ready habits through practical examples.</p><div class="tag-row"><span class="tag">React 18/19 concepts</span><span class="tag">Hooks</span><span class="tag">Fetch API</span><span class="tag">Accessibility</span><span class="tag">Performance</span></div></div>
+  <div class="section-head"><div><h2>Modern frontend roadmap</h2><p>Core concepts to learn and practise in order.</p></div></div>
+  <div class="concept-grid">
+    <article class="concept-card"><div class="concept-icon">⚛</div><span class="concept-badge">FOUNDATION</span><h3>Components, props & composition</h3><p>Split the UI into small reusable components. Pass data with props and compose layouts instead of repeating markup.</p></article>
+    <article class="concept-card"><div class="concept-icon">◉</div><span class="concept-badge">STATE</span><h3>State, events & derived UI</h3><p>Use useState for interactive values. Keep state minimal, derive values when possible, and use stable keys when rendering lists.</p></article>
+    <article class="concept-card"><div class="concept-icon">↻</div><span class="concept-badge">EFFECTS</span><h3>useEffect & cleanup</h3><p>Synchronize with external systems such as APIs and browser events. Add cleanup or cancellation when an effect starts work.</p></article>
+    <article class="concept-card"><div class="concept-icon">⇄</div><span class="concept-badge">NETWORKING</span><h3>Fetch API, async/await & CRUD</h3><p>Handle GET and POST requests, check response.ok, show loading/error states, and understand that demo APIs may not persist writes.</p></article>
+    <article class="concept-card"><div class="concept-icon">▤</div><span class="concept-badge">FORMS</span><h3>Controlled forms & validation</h3><p>Bind inputs to state, trim and validate user values, prevent unwanted page reloads, and disable submit while a request is pending.</p></article>
+    <article class="concept-card"><div class="concept-icon">⚡</div><span class="concept-badge">PERFORMANCE</span><h3>Memoization & rendering</h3><p>Understand React.memo, useMemo and useCallback; profile first and avoid adding memoization without a real need.</p></article>
+    <article class="concept-card"><div class="concept-icon">⌁</div><span class="concept-badge">TOOLING</span><h3>Vite, npm & environment config</h3><p>Use a modern build tool, split code by route when useful, keep secrets on the server, and never ship private API keys in frontend code.</p></article>
+    <article class="concept-card"><div class="concept-icon">◇</div><span class="concept-badge">QUALITY</span><h3>TypeScript, testing & accessibility</h3><p>Type API data, test important interactions, label form fields, preserve keyboard focus, and use semantic HTML.</p></article>
+    <article class="concept-card"><div class="concept-icon">↗</div><span class="concept-badge">NEXT STEP</span><h3>Routing, data & server rendering</h3><p>Learn React Router, data caching libraries, error boundaries, and the difference between client components and framework server components.</p></article>
+  </div>
+  <div class="section-head"><div><h2>Practical project: Fetchuser</h2><p>GET users, submit a controlled form with POST, and render the result as a table.</p></div></div>
+  <div class="panel"><div class="tag-row" style="margin-top:0;margin-bottom:12px"><span class="tag">useState</span><span class="tag">useEffect</span><span class="tag">GET</span><span class="tag">POST</span><span class="tag">Form handling</span></div>
+  <p class="muted" style="font-size:12px;line-height:1.8">Your example uses JSONPlaceholder. Its POST endpoint returns a simulated new record; it does not permanently save it on the server. The snippet below is a cleaned-up teaching version with loading/error handling and a pending-submit state.</p>
+  <pre class="react-code" id="fetchUserCode">import { useEffect, useState } from "react";
+
+export default function Fetchuser() {
+  const [users, setUsers] = useState([]);
+  const [name, setName] = useState("");
+  const [city, setCity] = useState("");
+  const [company, setCompany] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadUsers() {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users",
+          { signal: controller.signal }
+        );
+        if (!response.ok) throw new Error("Could not load users");
+        const data = await response.json();
+        setUsers(data);
+      } catch (err) {
+        if (err.name !== "AbortError") setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadUsers();
+    return () => controller.abort();
+  }, []);
+
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+    const user = {
+      name: name.trim(),
+      address: { city: city.trim() },
+      company: { name: company.trim() }
+    };
+    if (!user.name || !user.address.city || !user.company.name) return;
+
+    setSaving(true);
+    setError("");
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/users",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(user)
+        }
+      );
+      if (!response.ok) throw new Error("Could not add user");
+      const createdUser = await response.json();
+      setUsers(current => [...current, createdUser]);
+      setName(""); setCity(""); setCompany("");
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <section>
+      <h1>Fetchuser Data</h1>
+      {error && <p role="alert">{error}</p>}
+      <form onSubmit={handleFormSubmit}>
+        <label>Name <input value={name} onChange={e => setName(e.target.value)} required /></label>
+        <label>City <input value={city} onChange={e => setCity(e.target.value)} required /></label>
+        <label>Company <input value={company} onChange={e => setCompany(e.target.value)} required /></label>
+        <button disabled={saving}>{saving ? "Adding…" : "Add new user"}</button>
+      </form>
+      {loading ? <p>Loading users…</p> : (
+        <table>
+          <thead><tr><th>ID</th><th>Name</th><th>City</th><th>Company</th></tr></thead>
+          <tbody>{users.map(user => (
+            <tr key={user.id}>
+              <td>{user.id}</td><td>{user.name}</td>
+              <td>{user.address?.city}</td><td>{user.company?.name}</td>
+            </tr>
+          ))}</tbody>
+        </table>
+      )}
+    </section>
+  );
+}</pre>
+  <div class="assignment-actions" style="margin-top:12px"><button class="small-btn good" onclick="copyText(document.getElementById('fetchUserCode').textContent)">Copy Fetchuser code</button><button class="small-btn" onclick="copyText('npm create vite@latest my-react-app -- --template react\ncd my-react-app\nnpm install\nnpm run dev')">Copy Vite setup commands</button></div>
+  <div class="react-callout"><strong>Important improvements:</strong> check <code>response.ok</code>, show loading and errors, cancel the initial request on unmount, use a functional state update (<code>setUsers(current =&gt; [...current, createdUser])</code>), and use optional chaining for API fields. The demo only displays EDIT/DELETE buttons if you implement those handlers; a button without an action is not CRUD functionality.</div>
+  </div>
+  <div class="section-head"><div><h2>Interview-ready checkpoints</h2><p>Try explaining each point in your own words.</p></div></div>
+  <div class="topic-list">
+    <details class="topic"><summary><span class="num">01</span><span><strong>Why is useEffect used for GET requests?</strong><small>Effects and external systems</small></span><span class="chev">⌄</span></summary><div class="topic-body">It runs a synchronization effect after render. An empty dependency array means the effect is set up on mount; in development Strict Mode may run an extra setup/cleanup cycle, so effects should be safe to repeat.</div></details>
+    <details class="topic"><summary><span class="num">02</span><span><strong>Why use a functional state update?</strong><small>State updates and closures</small></span><span class="chev">⌄</span></summary><div class="topic-body"><code>setUsers(current =&gt; [...current, createdUser])</code> works with the latest queued state and avoids relying on a possibly stale <code>users</code> value captured by a handler.</div></details>
+    <details class="topic"><summary><span class="num">03</span><span><strong>Does JSONPlaceholder save POST data permanently?</strong><small>API behaviour</small></span><span class="chev">⌄</span></summary><div class="topic-body">No. It simulates a successful POST response for practice. The new record can be appended to local React state, but refreshing the page fetches the original dataset again.</div></details>
+  </div>
+</section>
+
 <section class="view" id="view-assignments"><h1 class="page-title">Assignment library<span style="color:var(--lime)">.</span></h1><p class="page-intro">Questions gathered from the provided WhatsApp export, indexing/slicing documents and scanned Python project PDF. Each item has a title, a solution you can edit, a copy button and a screenshot action. Additional practice questions are clearly labelled.</p><div class="toolbar"><input class="search" id="assignmentSearch" placeholder="Search question title or problem…"><select class="filter" id="assignmentFilter"><option value="all">All categories</option><option>For loop</option><option>While loop</option><option>If / elif</option><option>Indexing</option><option>String extraction</option><option>Multiple extraction</option><option>Variables & data types</option></select><select class="filter" id="assignmentSort"><option value="category">Group by category</option><option value="title">Sort by title</option></select></div><div id="assignmentGroups"></div></section>
 <section class="view" id="view-loops"><h1 class="page-title">60 for-loop questions<span style="color:var(--lime)">.</span></h1><p class="page-intro">A dedicated loop practice track: basics, strings, conditions, mixed lists, totals, patterns and mini challenges. Expand any question to view the starter solution, then run it in the terminal.</p><div class="toolbar"><input class="search" id="loopSearch" placeholder="Find a for-loop question…"><select class="filter" id="loopLevel"><option value="all">All levels</option><option>Beginner</option><option>Intermediate</option><option>Challenge</option></select><span class="pill" id="loopProgress">0 / 60 completed</span></div><div class="assignment-list" id="loopList"></div></section>
 <section class="view" id="view-terminal"><h1 class="page-title">Python terminal<span style="color:var(--lime)">.</span></h1><p class="page-intro">Write Python, press Run, then copy or screenshot the output. The Python runtime loads in your browser the first time; an internet connection is needed to download it. Your code stays in this page.</p><div class="terminal"><div class="terminal-head"><i class="traffic"></i><i class="traffic"></i><i class="traffic"></i><strong>main.py</strong><span id="runtimeStatus">● Runtime not loaded</span></div><div class="terminal-body"><textarea id="codeInput" spellcheck="false"># Try your Python code here
