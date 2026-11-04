@@ -91,7 +91,7 @@ export default function Fetchuser() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
 
-  useEffect(() => {
+  useEffect(() =&gt; {
     const controller = new AbortController();
 
     async function loadUsers() {
@@ -111,7 +111,7 @@ export default function Fetchuser() {
     }
 
     loadUsers();
-    return () => controller.abort();
+    return () =&gt; controller.abort();
   }, []);
 
   async function handleFormSubmit(event) {
@@ -136,7 +136,7 @@ export default function Fetchuser() {
       );
       if (!response.ok) throw new Error("Could not add user");
       const createdUser = await response.json();
-      setUsers(current => [...current, createdUser]);
+      setUsers(current =&gt; [...current, createdUser]);
       setName(""); setCity(""); setCompany("");
     } catch (err) {
       setError(err.message);
@@ -146,27 +146,27 @@ export default function Fetchuser() {
   }
 
   return (
-    <section>
-      <h1>Fetchuser Data</h1>
-      {error && <p role="alert">{error}</p>}
-      <form onSubmit={handleFormSubmit}>
-        <label>Name <input value={name} onChange={e => setName(e.target.value)} required /></label>
-        <label>City <input value={city} onChange={e => setCity(e.target.value)} required /></label>
-        <label>Company <input value={company} onChange={e => setCompany(e.target.value)} required /></label>
-        <button disabled={saving}>{saving ? "Adding…" : "Add new user"}</button>
-      </form>
-      {loading ? <p>Loading users…</p> : (
-        <table>
-          <thead><tr><th>ID</th><th>Name</th><th>City</th><th>Company</th></tr></thead>
-          <tbody>{users.map(user => (
-            <tr key={user.id}>
-              <td>{user.id}</td><td>{user.name}</td>
-              <td>{user.address?.city}</td><td>{user.company?.name}</td>
-            </tr>
-          ))}</tbody>
-        </table>
+    &lt;section&gt;
+      &lt;h1&gt;Fetchuser Data&lt;/h1&gt;
+      {error &amp;&amp; &lt;p role="alert"&gt;{error}&lt;/p&gt;}
+      &lt;form onSubmit={handleFormSubmit}&gt;
+        &lt;label&gt;Name &lt;input value={name} onChange={e =&gt; setName(e.target.value)} required /&gt;&lt;/label&gt;
+        &lt;label&gt;City &lt;input value={city} onChange={e =&gt; setCity(e.target.value)} required /&gt;&lt;/label&gt;
+        &lt;label&gt;Company &lt;input value={company} onChange={e =&gt; setCompany(e.target.value)} required /&gt;&lt;/label&gt;
+        &lt;button disabled={saving}&gt;{saving ? "Adding…" : "Add new user"}&lt;/button&gt;
+      &lt;/form&gt;
+      {loading ? &lt;p&gt;Loading users…&lt;/p&gt; : (
+        &lt;table&gt;
+          &lt;thead&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;City&lt;/th&gt;&lt;th&gt;Company&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+          &lt;tbody&gt;{users.map(user =&gt; (
+            &lt;tr key={user.id}&gt;
+              &lt;td&gt;{user.id}&lt;/td&gt;&lt;td&gt;{user.name}&lt;/td&gt;
+              &lt;td&gt;{user.address?.city}&lt;/td&gt;&lt;td&gt;{user.company?.name}&lt;/td&gt;
+            &lt;/tr&gt;
+          ))}&lt;/tbody&gt;
+        &lt;/table&gt;
       )}
-    </section>
+    &lt;/section&gt;
   );
 }</pre>
   <div class="assignment-actions" style="margin-top:12px"><button class="small-btn good" onclick="copyText(document.getElementById('fetchUserCode').textContent)">Copy Fetchuser code</button><button class="small-btn" onclick="copyText('npm create vite@latest my-react-app -- --template react\ncd my-react-app\nnpm install\nnpm run dev')">Copy Vite setup commands</button></div>
